@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 4, 255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.eyes {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  
+}
+.eye {
+  width: 100px;
+  height: 80px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 12%;
+  position: relative;
+  overflow: hidden;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1%;
+}
+
+.border::before{
+  content:' ';
+  position: absolute;
+  top: 450px;
+  width: 150px;
+  height: 70px;
+  background: black;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+
+}
+.border:hover::before{  
+  top: 450px;
+  width: 150px;
+  height: 20px;
+  background: black;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
